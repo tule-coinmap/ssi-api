@@ -1,0 +1,49 @@
+# GET http://localhost:3012/securities?market=HOSE&pageIndex=1&pageSize=10
+# GET http://localhost:3012/securitiesDetails?market=DER&symbol=VN30F2309&pageIndex=1&pageSize=10
+# GET http://localhost:3012/indexComponents?indexCode=VN30&pageIndex=1&pageSize=10
+# GET http://localhost:3012/indexList?exchange=HNX&pageIndex=1&pageSize=10
+# GET http://localhost:3012/dailyOhlc?symbol=SSI&fromDate=06/08/2023&toDate=08/08/2023&pageIndex=1&pageSize=10&ascending=true
+# GET http://localhost:3012/intradayOhlc?symbol=SSI&fromDate=06/08/2023&toDate=08/08/2023&pageIndex=1&pageSize=10&ascending=true
+# GET http://localhost:3012/dailyIndex?indexId=HNXIndex&fromDate=06/08/2023&toDate=08/08/2023&pageIndex=1&pageSize=10&ascending=true
+# GET http://localhost:3012/dailyStockPrice?symbol=SSI&market=HOSE&fromDate=07/08/2023&toDate=07/08/2023&pageIndex=1&pageSize=10
+# GET http://localhost:3012/initStream
+# GET http://localhost:3012/registerChannel?channel=X-TRADE:VN30F2309
+
+# GET http://localhost:3012/getOrderHistory?account=2645898&startDate=30/08/2023&endDate=05/09/2023
+# GET http://localhost:3012/getOrderBook?account=2645891
+# GET http://localhost:3012/getAuditOrderBook?account=2645898
+# GET http://localhost:3012/getPosition?account=2645891
+# GET http://localhost:3012/getDerPosition?account=2645898
+# GET http://localhost:3012/getMaxBuyQty?account=2645891&instrumentID=SSI&price=20
+# GET http://localhost:3012/getMaxSellQty?account=2645898&instrumentID=VN30F2310
+# GET http://localhost:3012/getAccountBalance?account=2645891
+# GET http://localhost:3012/getDerAccountBalance?account=2645898
+GET http://localhost:5000/getPpmmrAccount?account=2645891
+# POST http://localhost:5000/newOrder
+# Content-Type: application/json
+
+# {
+#   "account": "2645891",
+#   "buySell": "B",
+#   "market": "VN",
+#   "orderType": "LO",
+#   "price": 6000,
+#   "quantity": 100,
+#   "instrumentID": "HAG",
+#   "channelID": "IW",
+#   "stopOrder": false,
+#   "stopPrice": 0,
+#   "stopType": "",
+#   "stopStep": 0,
+#   "lossStep": 0,
+#   "profitStep": 0
+# }
+
+
+
+
+
+
+
+
+
